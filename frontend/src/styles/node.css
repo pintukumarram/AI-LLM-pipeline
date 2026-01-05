@@ -1,0 +1,93 @@
+.node {
+  width: 240px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.node:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.node-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--text);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 6px;
+  margin-bottom: 8px;
+}
+
+.node-icon {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.node-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.node-inputs,
+.node-outputs {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.node-body {
+  flex: 1;
+  text-align: center;
+  font-size: 13px;
+  color: var(--text);
+}
+
+/* Handles */
+.handle {
+  min-width: 54px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  color: white;
+  cursor: default;
+}
+
+.input-handle {
+  background: #10b981;
+}
+
+.output-handle {
+  background: #6366f1;
+}
+
+.handle:hover {
+  opacity: 0.9;
+}
+
+/* TextNode textarea */
+.text-area {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 6px;
+  font-size: 13px;
+  outline: none;
+  resize: none;
+  background: var(--card);
+  color: var(--text);
+}
+
+.text-area:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 1px var(--primary);
+}
